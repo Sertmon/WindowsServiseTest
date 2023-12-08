@@ -22,7 +22,7 @@ namespace WindowsServiseTest
         {
             WriteToFile("Service is started at " + DateTime.Now);
             timer.Elapsed += new ElapsedEventHandler(OnElapsedTime);
-            timer.Interval = 5000; //number in milisecinds ff 
+            timer.Interval = 5000; //number in milisecinds 22 
             timer.Enabled = true;
         }
         protected override void OnStop()
